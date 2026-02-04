@@ -7,7 +7,9 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-14 md:flex-row md:items-start md:justify-between">
         <div className="max-w-md space-y-4">
           <div className="flex items-center gap-2 text-zinc-100">
-            <img src="/logo.svg" alt="Quild Cohort Logo" className="h-6 w-auto invert brightness-0" />
+            <a href="https://quild.in" target="_blank" rel="noopener noreferrer">
+              <img src="/logo.svg" alt="Quild Cohort Logo" className="h-6 w-auto invert brightness-0" />
+            </a>
             <span className="text-sm font-semibold tracking-wide">Quild Cohort</span>
           </div>
           <p className="text-sm leading-6 text-zinc-400">
@@ -31,7 +33,15 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-xs text-zinc-400">
-            Created by <span className="text-zinc-300">Quild Developers</span>
+            Created by{" "}
+            <a
+              href="https://quild.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-zinc-300 hover:text-white transition-colors"
+            >
+              Quild Developer
+            </a>
           </div>
         </div>
 

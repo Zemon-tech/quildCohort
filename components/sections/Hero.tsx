@@ -1,4 +1,4 @@
-import * as React from "react";
+import Link from "next/link";
 import { motion } from "motion/react";
 
 export default function Hero() {
@@ -20,9 +20,9 @@ export default function Hero() {
                     become actions.
                 </h1>
                 <div className="mt-10">
-                    <a className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="#get-started">
+                    <Link className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="/apply">
                         Begin Journey
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-widest text-zinc-500 font-medium flex flex-col items-center gap-3">

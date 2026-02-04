@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quild Cohort",
+  title: "Cohort 2.0",
   description: "Step into the future — guided by clarity.",
   icons: {
     icon: [

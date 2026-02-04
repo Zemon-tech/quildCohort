@@ -88,7 +88,6 @@ export default function UseCases() {
                                     <p className="text-sm font-small uppercase tracking-[0.2em] text-zinc-500">{useCase.title}</p>
                                     <h3 className="mt-6 text-1xl leading-tight text-white md:text-2xl font-small">{useCase.description}</h3>
                                     <p className="mt-4 text-zinc-400 text-sm md:text-base leading-relaxed">{useCase.text}</p>
-                                    <Button className="mt-8 rounded-full bg-zinc-100 px-6 py-4 text-sm font-semibold text-black hover:bg-white transition-all">Get started</Button>
                                 </div>
                             </div>
                         </TabsContent>
