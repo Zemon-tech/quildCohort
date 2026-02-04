@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:worker": "opennextjs-cloudflare",
+    "dev:worker": "wrangler dev --port 8787",
+    "preview:worker": "npm run build:worker && wrangler dev --port 8787",
+    "deploy": "npm run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@base-ui/react": "^1.1.0",

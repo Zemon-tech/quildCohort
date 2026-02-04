@@ -34,6 +34,26 @@ export default function Home() {
         <div className="mt-20" />
         <Footer />
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Quild Cohort 2.0",
+            "description": "Advanced Engineering Fellowship guided by clarity and disciplined intelligence.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Quild",
+              "sameAs": "https://quild.in"
+            },
+            "offers": {
+              "@type": "Offer",
+              "category": "Fellowship"
+            }
+          })
+        }}
+      />
     </div>
   );
 }
