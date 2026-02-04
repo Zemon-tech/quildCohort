@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence, type Variants } from "motion/react"
+import Link from "next/link"
 
 const menuVariants: Variants = {
   closed: {
@@ -54,9 +55,9 @@ export default function Navbar() {
           <a className="hover:text-white transition-colors" href="#faq">FAQ</a>
         </nav>
 
-        <a href="#get-started" className="hidden font-medium text-zinc-200 hover:text-white transition-colors md:block">
+        <Link href="/apply" className="hidden font-medium text-zinc-200 hover:text-white transition-colors md:block">
           Get Started
-        </a>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -104,6 +105,15 @@ export default function Navbar() {
                   {item}
                 </motion.a>
               ))}
+              <motion.div variants={linkVariants} className="mt-4">
+                <Link
+                  href="/apply"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-block rounded-full bg-white px-8 py-4 text-lg font-semibold text-black"
+                >
+                  Get Started
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         )}
