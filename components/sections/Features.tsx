@@ -3,30 +3,30 @@ import FeaturePreviewCard from "../FeaturePreviewCard";
 
 export default function Features() {
     return (
-        <section id="features" className="mx-auto mt-24 max-w-6xl px-6">
+        <section id="intelligence" className="mx-auto mt-24 max-w-6xl px-6 scroll-mt-20">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
-                <p className="text-sm text-zinc-500">Introducing Message</p>
+                <p className="text-sm text-zinc-500">Intelligence</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Harness invisible power <span className="text-zinc-500">to write faster, focus deeper, and save hours.</span>
+                Harness disciplined intelligence <span className="text-zinc-500">to build faster, think deeper, and ship with clarity.</span>
             </h2>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
                 <FeaturePreviewCard
-                    title="Time Unfolded"
-                    subtitle="Automate tasks and reclaim hours. Your AI assistant turns routine into seconds so you can focus on growth."
-                    imageUrl="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1640&auto=format&fit=crop"
+                    title="From Software Labor to Software Developer"
+                    subtitle="Understand the difference between writing code and engineering systems. Learn how decisions, structure, and clarity shape real software."
+                    imageUrl="/Feature-1.png"
                 />
                 <FeaturePreviewCard
-                    title="Words That Flow"
-                    subtitle="Drafts, blogs, and emails with clarity and speed — the elegance of language without the struggle."
-                    imageUrl="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1640&auto=format&fit=crop"
+                    title="Engineering with AI, Not Replaced by It"
+                    subtitle="Work with AI-native engineering tools as collaborators. Learn how humans evolve by thinking, not by memorizing syntax."
+                    imageUrl="/Feature-2.png"
                 />
                 <FeaturePreviewCard
-                    title="A Silent Guide"
-                    subtitle="Always present to keep you focused — suggestions, reminders, and insights right when you need them."
-                    imageUrl="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1640&auto=format&fit=crop"
+                    title="Discipline Before Intelligence"
+                    subtitle="We provide intelligence through structure, feedback, and systems. Your responsibility is discipline, consistency, and seriousness."
+                    imageUrl="/Feature-3.png"
                 />
             </div>
         </section>

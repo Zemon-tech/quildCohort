@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-14 md:flex-row md:items-start md:justify-between">
         <div className="max-w-md space-y-4">
           <div className="flex items-center gap-2 text-zinc-100">
-            <div className="h-5 w-5 rounded-sm bg-white" />
-            <span className="text-sm font-semibold tracking-wide">Message</span>
+            <img src="/logo.svg" alt="Quild Cohort Logo" className="h-6 w-auto invert brightness-0" />
+            <span className="text-sm font-semibold tracking-wide">Quild Cohort</span>
           </div>
           <p className="text-sm leading-6 text-zinc-400">
-            Track every move, analyze your performance, and get real‑time coaching.
+            Step into the future — guided by clarity. Harness disciplined intelligence to build faster, think deeper, and ship with clarity.
           </p>
           <div className="flex items-center gap-3 text-zinc-400">
             <a href="#" className="hover:text-zinc-200 transition-colors">
@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-xs text-zinc-400">
-            Created by <span className="text-zinc-300">Arthur</span> in Framer
+            Created by <span className="text-zinc-300">Quild Developers</span>
           </div>
         </div>
 

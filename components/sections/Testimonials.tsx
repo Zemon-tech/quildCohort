@@ -31,10 +31,10 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <section className="mx-auto mt-40 max-w-6xl px-6" id="testimonials">
+        <section className="mx-auto mt-40 max-w-6xl px-6 scroll-mt-32" id="community">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
-                <p className="text-sm text-zinc-500">Testimonials</p>
+                <p className="text-sm text-zinc-500">Community</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
                 What others whisper <span className="text-zinc-500">about the experience</span>

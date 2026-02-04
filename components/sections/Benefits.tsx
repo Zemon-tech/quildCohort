@@ -3,46 +3,46 @@ import { Hourglass, Feather, Target, Book, Handshake, Shield } from "lucide-reac
 
 const benefits = [
     {
-        title: "Time Returned",
-        body: "Automate the routine and reclaim hours for what matters most.",
+        title: "Engineering Discipline",
+        body: "Weekly reports and evaluations prioritize seriousness, consistency, and effort.",
         icon: Hourglass
     },
     {
-        title: "Words with Ease",
-        body: "Turn thoughts into polished writing — clear, natural, and fast.",
+        title: "AI-Native Thinking",
+        body: "Learn to collaborate with AI tools as junior software developers, not as shortcuts.",
         icon: Feather
     },
     {
-        title: "Guided Focus",
-        body: "Stay sharp with gentle nudges that keep distractions away.",
+        title: "System Understanding",
+        body: "Know what runs on your machine, what libraries exist, and how applications actually function.",
         icon: Target
     },
     {
-        title: "Instant Knowledge",
-        body: "Condense research and insights into clarity within seconds.",
+        title: "Portfolio-Ready Projects",
+        body: "Build, debug, and design real software projects — not toy assignments.",
         icon: Book
     },
     {
-        title: "Always Available",
-        body: "Your silent partner, ready to help whenever you need it.",
+        title: "Mental Models That Endure",
+        body: "Carry frameworks and ways of thinking that remain useful beyond tools and trends.",
         icon: Handshake
     },
     {
-        title: "Built‑in Trust",
-        body: "Protected by design — your data, your ideas, always secure.",
+        title: "Trust by Design",
+        body: "Free, selective, and serious. Entry is earned through intent, not payment.",
         icon: Shield
     },
 ];
 
 export default function Benefits() {
     return (
-        <section className="mx-auto mt-40 max-w-6xl px-6" id="benefits">
+        <section className="mx-auto mt-32 max-w-6xl px-6 scroll-mt-28" id="values">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
-                <p className="text-sm text-zinc-500">Benefits</p>
+                <p className="text-sm text-zinc-500">Values</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Invisible power at your side <span className="text-zinc-500">delivering tangible benefits every day.</span>
+                Invisible structure, <span className="text-zinc-500">tangible growth.</span>
             </h2>
             <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {benefits.map((benefit) => {

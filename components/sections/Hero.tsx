@@ -1,32 +1,38 @@
 import * as React from "react";
+import { motion } from "motion/react";
 
 export default function Hero() {
     return (
-        <section className="relative isolate flex min-h-screen w-full items-center justify-center overflow-hidden bg-zinc-900/50 py-28">
-            <div
-                className="absolute inset-0 -z-10 bg-cover bg-center opacity-60"
-                style={{
-                    backgroundImage:
-                        "url(https://images.unsplash.com/photo-1453791052107-5c843da62d97?q=80&w=1640&auto=format&fit=crop)",
-                }}
-            />
+        <section className="relative isolate flex h-screen w-full items-start justify-center overflow-hidden pt-32 md:pt-40">
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 -z-10 h-full w-full object-cover"
+            >
+                <source src="/hero.mp4" type="video/mp4" />
+            </video>
             <div className="text-center">
-                <h1 className="mx-auto max-w-3xl text-5xl font-semibold leading-tight text-zinc-100 md:text-6xl">
-                    Step into the future,
+                <h1 className="mx-auto max-w-4xl text-4xl font-normal leading-[1.1] text-zinc-100 md:text-5xl lg:text-6xl">
+                    Where thoughts
                     <br />
-                    guided by AI clarity
+                    become actions.
                 </h1>
-                <p className="mx-auto mt-5 max-w-xl text-lg text-zinc-300">
-                    Experience the tool right now. Just dive in and see what AI can do for you.
-                </p>
-                <div className="mt-8">
-                    <a className="rounded-full bg-white px-8 py-4 text-sm font-semibold text-black shadow hover:bg-zinc-200 transition-colors" href="#get-started">
-                        Try It Now
+                <div className="mt-10">
+                    <a className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="#get-started">
+                        Begin Journey
                     </a>
                 </div>
             </div>
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs text-zinc-400">
-                <div className="mx-auto mb-2 h-4 w-[1px] animate-pulse rounded bg-zinc-400/60" />
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-widest text-zinc-500 font-medium flex flex-col items-center gap-3">
+                <div className="h-7 w-4 rounded-full border border-zinc-500/40 flex justify-center p-1">
+                    <motion.div
+                        animate={{ y: [0, 8, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                        className="h-1.5 w-0.5 rounded-full bg-zinc-400"
+                    />
+                </div>
                 Scroll to explore
             </div>
         </section>

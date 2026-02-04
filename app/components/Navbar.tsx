@@ -34,22 +34,23 @@ export default function Navbar() {
     }
   }, [isOpen])
 
-  const menuItems = ["About", "Features", "Testimonials", "Pricing", "FAQ"]
+  const menuItems = ["Intelligence", "Pathways", "System", "Values", "Community", "FAQ"]
 
   return (
     <div className="pointer-events-auto relative w-full px-6 md:px-0">
       <div className="mx-auto flex items-center justify-between md:justify-center md:gap-10 text-sm text-zinc-200">
         <div className="flex items-center gap-2">
-          <div className="h-5 w-5 rounded-sm bg-white" />
-          <span className="font-semibold tracking-wide">Message</span>
+          <img src="/logo.svg" alt="Quild Cohort Logo" className="h-6 w-auto invert brightness-0" />
+          <span className="font-semibold tracking-wide">Quild Cohort</span>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-6 text-zinc-400 md:flex">
-          <a className="hover:text-white transition-colors" href="#about">About</a>
-          <a className="hover:text-white transition-colors" href="#features">Features</a>
-          <a className="hover:text-white transition-colors" href="#testimonials">Testimonials</a>
-          <a className="hover:text-white transition-colors" href="#pricing">Pricing</a>
+          <a className="hover:text-white transition-colors" href="#intelligence">Intelligence</a>
+          <a className="hover:text-white transition-colors" href="#pathways">Pathways</a>
+          <a className="hover:text-white transition-colors" href="#system">System</a>
+          <a className="hover:text-white transition-colors" href="#values">Values</a>
+          <a className="hover:text-white transition-colors" href="#community">Community</a>
           <a className="hover:text-white transition-colors" href="#faq">FAQ</a>
         </nav>
 
@@ -79,8 +80,8 @@ export default function Navbar() {
             {/* Header */}
             <div className="flex items-center justify-between text-sm">
               <div className="flex items-center gap-2 text-zinc-200">
-                <div className="h-5 w-5 rounded-sm bg-white" />
-                <span className="font-semibold tracking-wide">Message</span>
+                <img src="/logo.svg" alt="Quild Cohort Logo" className="h-6 w-auto invert brightness-0" />
+                <span className="font-semibold tracking-wide">Quild Cohort</span>
               </div>
               <button
                 onClick={() => setIsOpen(false)}

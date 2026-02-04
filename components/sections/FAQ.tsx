@@ -9,48 +9,48 @@ import {
 const faqItems1 = [
     {
         id: "item-1",
-        question: "What is this AI platform designed for?",
-        answer: "It helps you write, research, and focus with an assistant that shapes ideas into clear outputs."
+        question: "What is this cohort designed for?",
+        answer: "To help students evolve from software labor into software developers who understand systems, not just syntax."
     },
     {
         id: "item-2",
-        question: "Do I need technical knowledge to use it?",
-        answer: "No. It’s built for everyone—simple prompts, powerful results."
+        question: "Do I need to already know coding?",
+        answer: "Basic familiarity helps, but mastery is not required. Discipline matters more than prior skill."
     },
     {
         id: "item-3",
-        question: "Which AI models power the tool?",
-        answer: "A mix of state‑of‑the‑art large language models optimized for writing and reasoning."
+        question: "Is this a coding bootcamp?",
+        answer: "No. We do not teach coding as a product. We teach engineering thinking using AI tools."
     }
 ];
 
 const faqItems2 = [
     {
         id: "item-4",
-        question: "Is there a free plan available?",
-        answer: "Yes, start with the Starter plan and upgrade anytime."
+        question: "Is Cohort 2.0 free?",
+        answer: "Yes. It is free and highly selective."
     },
     {
         id: "item-5",
-        question: "Can I use this for business purposes?",
-        answer: "Absolutely. Teams use Pro and Lifetime plans for collaboration and support."
+        question: "Who can apply?",
+        answer: "Primarily students from IPU colleges. Others may apply but selection is not guaranteed."
     },
     {
         id: "item-6",
-        question: "How can I get support if I have issues?",
-        answer: "Priority support is available on paid plans; community support on Starter."
+        question: "How are students evaluated?",
+        answer: "Weekly reports measure activity, intelligence growth, and discipline — discipline carries the highest weight."
     }
 ];
 
 export default function FAQ() {
     return (
-        <section className="mx-auto mt-40 max-w-6xl px-6" id="faq">
+        <section className="mx-auto mt-40 max-w-6xl px-6 scroll-mt-32" id="faq">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
                 <p className="text-sm text-zinc-500">FAQ</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Your questions, <span className="text-zinc-500">answered with clarity</span>
+                Questions, <span className="text-zinc-500">answered with honesty.</span>
             </h2>
             <div className="mt-16 grid gap-x-12 md:grid-cols-2 items-start">
                 <Accordion type="multiple" className="w-full">
