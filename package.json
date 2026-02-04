@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build:worker": "opennextjs-cloudflare",
+    "build:worker": "npx opennextjs-cloudflare",
     "dev:worker": "wrangler dev --port 8787",
     "preview:worker": "npm run build:worker && wrangler dev --port 8787",
     "deploy": "npm run build:worker && wrangler deploy"
