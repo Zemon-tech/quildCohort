@@ -9,27 +9,80 @@ import {
 const testimonials = [
     {
         quote: "I've tested countless AI tools, but this one feels different — less like software, more like a guide that clears the fog in my projects.",
-        author: "Sophia M.",
+        author: "Harshit Kundra",
         role: "Product Designer"
     },
     {
         quote: "Within days, it streamlined my workflow. The balance of precision and inspiration it offers is unlike anything I've seen.",
-        author: "David K.",
+        author: "Ritik ",
         role: "Indie Hacker"
     },
     {
         quote: "At first I was skeptical. But the clarity it brings into complex problems feels almost like working with a second brain.",
-        author: "Aria L.",
+        author: "Shashi Ranjan",
         role: "Researcher"
     },
     {
         quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
-        author: "Lucas R.",
+        author: "Prachi Yadav",
         role: "Creative Director"
-    }
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Sanjay",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Saarthak",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Yash Tomar",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Madhav Varshney",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Aditya Gahlan",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Khushi Dhankar",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Lakshit",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Agustya",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Sachin Patel",
+        role: "Creative Director"
+    },
+    {
+        quote: "The interface is so intuitive, and the AI suggestions are actually helpful. It has completely changed how I approach my daily tasks.",
+        author: "Jatin Goyal",
+        role: "Creative Director"
+    },
+
 ];
 
 export default function Testimonials() {
+    const displayedTestimonials = testimonials.slice(0, 9);
+
     return (
         <section className="mx-auto mt-40 max-w-6xl px-6 scroll-mt-32" id="community">
             <div className="mb-4 flex items-center gap-2">
@@ -42,7 +95,7 @@ export default function Testimonials() {
             <div className="mt-20">
                 <Carousel loop autoplay autoplayInterval={5000}>
                     <CarouselContent className="-ml-4">
-                        {testimonials.map((t, i) => (
+                        {displayedTestimonials.map((t, i) => (
                             <CarouselItem key={i} className="basis-full md:basis-1/2 lg:basis-1/3 pl-4">
                                 <div className="group relative border border-white/10 bg-[#0c0c0c]/80 p-10 h-full flex flex-col justify-between">
                                     <p className="text-lg leading-relaxed text-zinc-300">
@@ -53,7 +106,7 @@ export default function Testimonials() {
                                             <h4 className="font-semibold text-white">{t.author}</h4>
                                             <p className="text-sm text-zinc-500">{t.role}</p>
                                         </div>
-                                        <span className="text-xs text-zinc-700 font-mono tracking-wider">{i + 1}/{testimonials.length}</span>
+                                        <span className="text-xs text-zinc-700 font-mono tracking-wider">{i + 1}/{displayedTestimonials.length}</span>
                                     </div>
                                 </div>
                             </CarouselItem>
