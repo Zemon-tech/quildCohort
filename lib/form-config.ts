@@ -3,6 +3,7 @@ import { z } from "zod";
 export const applicationSchema = z.object({
     name: z.string().min(2, "Name is too short"),
     email: z.string().email("Invalid email address"),
+    phone: z.string().min(10, "Phone number must be at least 10 digits").max(15, "Phone number is too long").regex(/^[+\d][\d\s\-()]{8,14}$/, "Invalid phone number"),
     ageGroup: z.string().min(1, "Please select an age group"),
     college: z.string().min(2, "College name is too short"),
     branch: z.string().min(1, "Please select your branch"),
@@ -38,6 +39,7 @@ export const questions: Question[] = [
     // Basic Info
     { id: "name", label: "What is your full name?", type: "text", placeholder: "Type your answer here..." },
     { id: "email", label: "What is your email address?", type: "text", placeholder: "name@example.com" },
+    { id: "phone", label: "What is your phone number?", type: "text", placeholder: "+91 98765 43210" },
     {
         id: "ageGroup",
         label: "Which age group do you fall into?",

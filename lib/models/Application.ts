@@ -3,6 +3,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 export interface IApplication extends Document {
     name: string;
     email: string;
+    phone: string;
     ageGroup: string;
     college: string;
     branch: string;
@@ -25,6 +26,7 @@ export interface IApplication extends Document {
 const ApplicationSchema: Schema = new Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
+    phone: { type: String, required: true },
     ageGroup: { type: String, required: true },
     college: { type: String, required: true },
     branch: { type: String, required: true },
