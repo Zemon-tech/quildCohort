@@ -4,6 +4,7 @@ import * as React from "react"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence, type Variants } from "motion/react"
 import Link from "next/link"
+import { useSmoothScroll } from "../../components/SmoothScroll"
 
 const menuVariants: Variants = {
   closed: {
@@ -35,6 +36,14 @@ export default function Navbar() {
     }
   }, [isOpen])
 
+  const { scrollTo } = useSmoothScroll()
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault()
+    scrollTo(`#${id}`)
+    setIsOpen(false)
+  }
+
   const menuItems = ["Intelligence", "Pathways", "System", "Values", "Community", "FAQ"]
 
   return (
@@ -47,12 +56,12 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-6 text-zinc-400 md:flex">
-          <a className="hover:text-white transition-colors" href="#intelligence">Intelligence</a>
-          <a className="hover:text-white transition-colors" href="#pathways">Pathways</a>
-          <a className="hover:text-white transition-colors" href="#system">System</a>
-          <a className="hover:text-white transition-colors" href="#values">Values</a>
-          <a className="hover:text-white transition-colors" href="#community">Community</a>
-          <a className="hover:text-white transition-colors" href="#faq">FAQ</a>
+          <a className="hover:text-white transition-colors" href="#intelligence" onClick={(e) => handleNavClick(e, "intelligence")}>Intelligence</a>
+          <a className="hover:text-white transition-colors" href="#pathways" onClick={(e) => handleNavClick(e, "pathways")}>Pathways</a>
+          <a className="hover:text-white transition-colors" href="#system" onClick={(e) => handleNavClick(e, "system")}>System</a>
+          <a className="hover:text-white transition-colors" href="#values" onClick={(e) => handleNavClick(e, "values")}>Values</a>
+          <a className="hover:text-white transition-colors" href="#community" onClick={(e) => handleNavClick(e, "community")}>Community</a>
+          <a className="hover:text-white transition-colors" href="#faq" onClick={(e) => handleNavClick(e, "faq")}>FAQ</a>
         </nav>
 
         <Link href="/apply" className="hidden font-medium text-zinc-200 hover:text-white transition-colors md:block">
@@ -98,7 +107,7 @@ export default function Navbar() {
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, item.toLowerCase())}
                   variants={linkVariants}
                   className="text-4xl font-normal text-zinc-100 tracking-tight"
                 >
