@@ -14,18 +14,22 @@ export default function Hero() {
             >
                 <source src="/hero.mp4" type="video/mp4" />
             </video>
-            <div className="text-center flex flex-col items-center z-10">
+            <div className="text-center flex flex-col items-center z-10 w-full px-7 md:px-12">
                 <h1 className="mx-auto max-w-5xl text-4xl font-normal leading-[1.1] text-zinc-100 md:text-5xl lg:text-6xl tracking-tight">
                     Engineering. Discipline. Intelligence.
                 </h1>
-                <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400 font-light leading-relaxed">
+                <p className="mx-auto mt-6 max-w-2xl text-[17px] md:text-lg text-zinc-400 font-light leading-relaxed px-2 md:px-0">
                     A selective, 4-week engineering cohort for builders who refuse to be average. <br className="hidden md:block" />
                     Move beyond syntax. Build production-grade systems. Collaborate with AI.
                 </p>
-                <div className="mt-8 flex flex-col items-center gap-4">
-                    <p className="text-[13px] font-medium text-zinc-300 uppercase tracking-widest">
-                        15 hours/week • Strict Standards • No Shortcuts
-                    </p>
+                <div className="mt-10 flex flex-col items-center gap-6 w-full">
+                    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-4 text-[13px] font-medium text-zinc-300 uppercase tracking-widest text-center px-4">
+                        <span className="opacity-90">15 hours/week</span>
+                        <span className="hidden md:block text-zinc-700">•</span>
+                        <span className="opacity-90">Strict Standards</span>
+                        <span className="hidden md:block text-zinc-700">•</span>
+                        <span className="opacity-90">No Shortcuts</span>
+                    </div>
                     <Link className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="/apply">
                         Apply to Cohort 2.0
                     </Link>
