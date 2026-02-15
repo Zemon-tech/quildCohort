@@ -9,23 +9,23 @@ export default function Features() {
                 <p className="text-sm text-zinc-500">Intelligence</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Harness disciplined intelligence <span className="text-zinc-500">to build faster, think deeper, and ship with clarity.</span>
+                The Standard. <span className="text-zinc-500">We build engineers, not just coders.</span>
             </h2>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
                 <FeaturePreviewCard
-                    title="From Software Labor to Software Developer"
-                    subtitle="Understand the difference between writing code and engineering systems. Learn how decisions, structure, and clarity shape real software."
+                    title="Production-Level Engineering"
+                    subtitle="Stop copying code. Start designing architectures. Learn to reason about trade-offs, scalability, and security constraints before you write a single line."
                     imageUrl="/Feature-1.png"
                 />
                 <FeaturePreviewCard
-                    title="Engineering with AI, Not Replaced by It"
-                    subtitle="Work with AI-native engineering tools as collaborators. Learn how humans evolve by thinking, not by memorizing syntax."
+                    title="AI as a Catalyst"
+                    subtitle="Don't let AI replace your thinking. Learn structured prompting, prompt debugging, and how to use LLMs to amplify your logic, not bypass it."
                     imageUrl="/Feature-2.png"
                 />
                 <FeaturePreviewCard
-                    title="Discipline Before Intelligence"
-                    subtitle="We provide intelligence through structure, feedback, and systems. Your responsibility is discipline, consistency, and seriousness."
+                    title="Execution is the Only Metric"
+                    subtitle="Ideas are cheap. We value consistency. Weekly evaluations, strict deadlines, and a &quot;shipping is binary&quot; philosophy."
                     imageUrl="/Feature-3.png"
                 />
             </div>

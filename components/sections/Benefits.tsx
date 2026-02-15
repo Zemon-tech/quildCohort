@@ -3,34 +3,34 @@ import { Hourglass, Feather, Target, Book, Handshake, Shield } from "lucide-reac
 
 const benefits = [
     {
-        title: "Engineering Discipline",
-        body: "Weekly reports and evaluations prioritize seriousness, consistency, and effort.",
+        title: "Thinking > Syntax",
+        body: "Any chatbot can write code. Only an engineer can decide what code to write. We teach decision-making.",
         icon: Hourglass
     },
     {
-        title: "AI-Native Thinking",
-        body: "Learn to collaborate with AI tools as junior software developers, not as shortcuts.",
-        icon: Feather
+        title: "Standards > Speed",
+        body: "Fast is good. Correct is better. We prioritize clean, maintainable architecture over fragile hacks.",
+        icon: Shield
     },
     {
-        title: "System Understanding",
-        body: "Know what runs on your machine, what libraries exist, and how applications actually function.",
+        title: "Creation > Consumption",
+        body: "You learn by building, breaking, and fixing. No passive watching of tutorials. You are here to work.",
         icon: Target
     },
     {
-        title: "Portfolio-Ready Projects",
-        body: "Build, debug, and design real software projects — not toy assignments.",
+        title: "Engineering Discipline",
+        body: "Weekly reports measure activity, intelligence growth, and discipline — discipline carries the highest weight.",
         icon: Book
     },
     {
-        title: "Mental Models That Endure",
-        body: "Carry frameworks and ways of thinking that remain useful beyond tools and trends.",
+        title: "System Awareness",
+        body: "Know what runs on your machine, what libraries exist, and how applications actually function.",
         icon: Handshake
     },
     {
         title: "Trust by Design",
         body: "Free, selective, and serious. Entry is earned through intent, not payment.",
-        icon: Shield
+        icon: Feather
     },
 ];
 
@@ -39,10 +39,10 @@ export default function Benefits() {
         <section className="mx-auto mt-32 max-w-6xl px-6 scroll-mt-28" id="values">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
-                <p className="text-sm text-zinc-500">Values</p>
+                <p className="text-sm text-zinc-500">The Ethos</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Invisible structure, <span className="text-zinc-500">tangible growth.</span>
+                Why we do this.
             </h2>
             <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {benefits.map((benefit) => {

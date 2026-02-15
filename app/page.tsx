@@ -7,8 +7,10 @@ import Hero from "../components/sections/Hero";
 import Features from "../components/sections/Features";
 import UseCases from "../components/sections/UseCases";
 import HowItWorks from "../components/sections/HowItWorks";
+import Curriculum from "../components/sections/Curriculum";
 import Benefits from "../components/sections/Benefits";
 import Testimonials from "../components/sections/Testimonials";
+import Logistics from "../components/sections/Logistics";
 import FAQ from "../components/sections/FAQ";
 import CTA from "../components/sections/CTA";
 
@@ -24,8 +26,10 @@ export default function Home() {
         <Features />
         <UseCases />
         <HowItWorks />
+        <Curriculum />
         <Benefits />
         <Testimonials />
+        <Logistics />
         <FAQ />
 
         <div className="mt-25" />

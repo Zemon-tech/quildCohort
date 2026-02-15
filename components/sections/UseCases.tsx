@@ -12,36 +12,36 @@ import {
 
 const useCases = [
     {
-        id: "content",
-        title: "Content Creation",
-        description: "Engineering Thought Into Expression",
-        text: "Learn to structure ideas, documentation, and technical writing clearly — essential for engineers who design systems others must understand.",
+        id: "backend",
+        title: "System Design",
+        description: "Build the Engine.",
+        text: "Design relational schemas in PostgreSQL. Structure modular Node.js APIs. Understand Docker, REST, and authentication. You will build systems that scale, not just scripts that run.",
         imageUrl: "/useCase-1.png",
-        aiMessage: "Here's a quick draft for your new blog post introduction. In today's fast-paced digital world, finding your unique voice is more important than ever.",
+        aiMessage: "Analyzing database schema for potential bottlenecks. Suggesting indexing strategy for high-volume queries...",
     },
     {
-        id: "coding",
-        title: "Coding Help",
-        description: "Understanding Code Without Worshipping It",
-        text: "Read, write, and reason about code using AI tools. Syntax becomes familiar, not intimidating — without chasing mastery.",
+        id: "frontend",
+        title: "Production Frontend",
+        description: "Build the Interface.",
+        text: "Move beyond 'components everywhere.' Structure Next.js/React apps for maintainability. Integrate payments, real-time states, and clean UX.",
         imageUrl: "/useCase-2.png",
-        aiMessage: "I'll generate a Python script that analyzes customer feedback for sentiment and key themes. Analyzing code…",
+        aiMessage: "Refactoring component hierarchy for better re-rendering performance. Implementing optimistic UI updates...",
     },
     {
-        id: "research",
-        title: "Research & Insights",
-        description: "Thinking in Systems, Not Tutorials",
-        text: "Learn how to analyze libraries, frameworks, and tools. Understand what machine you are using, what is installed, and why it works.",
+        id: "ai",
+        title: "AI-Augmented Engineering",
+        description: "Build Faster.",
+        text: "Master the triad: Cursor, Windsurf, and LLM APIs. Learn to decompose complex problems so AI can handle the execution while you handle the direction.",
         imageUrl: "/useCase-3.png",
-        isInsight: true, // Special flag for the Insight UI
+        isInsight: true,
     },
     {
-        id: "focus",
-        title: "Focus & Productivity",
-        description: "Discipline as a Competitive Advantage",
-        text: "Weekly evaluations, strict structure, and accountability systems ensure progress — intelligence grows where discipline exists.",
+        id: "docs",
+        title: "Technical Clarity",
+        description: "Build the Narrative.",
+        text: "Code is useless if no one understands it. Learn to write technical documentation, pull requests, and system architecture diagrams that command respect.",
         imageUrl: "/useCase-4.png",
-        aiMessage: "Stay focused with gentle nudges and timely reminders to keep your flow uninterrupted.",
+        aiMessage: "Generating API documentation from OpenAPI spec. Drafting pull request summary with trade-off analysis...",
     }
 ];
 
@@ -51,16 +51,16 @@ export default function UseCases() {
             <div className="px-6 md:px-0">
                 <div className="mb-4 flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-zinc-600" />
-                    <p className="text-sm text-zinc-500">Pathways</p>
+                    <p className="text-sm text-zinc-500">Competence</p>
                 </div>
                 <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                    Different paths, one disciplined way of thinking.
+                    What you will actually master.
                 </h2>
             </div>
 
             {/* Desktop Version (Tabs) */}
             <div className="hidden md:block">
-                <Tabs defaultValue="content" className="mt-10">
+                <Tabs defaultValue="backend" className="mt-10">
                     <TabsList variant="line" className="h-auto justify-start gap-10 bg-transparent p-0">
                         {useCases.map((useCase) => (
                             <TabsTrigger

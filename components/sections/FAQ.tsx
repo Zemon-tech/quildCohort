@@ -9,36 +9,36 @@ import {
 const faqItems1 = [
     {
         id: "item-1",
-        question: "What is this cohort designed for?",
-        answer: "To help students evolve from software labor into software developers who understand systems, not just syntax."
+        question: "What exactly will I learn?",
+        answer: "You will learn to build full-stack applications (Next.js, Node, Postgres) using AI as a force multiplier. You will leave with a production-grade portfolio project and a systems-thinking mindset."
     },
     {
         id: "item-2",
-        question: "Do I need to already know coding?",
-        answer: "Basic familiarity helps, but mastery is not required. Discipline matters more than prior skill."
+        question: "What is the time commitment?",
+        answer: "Expect ~15 hours per week. 6 hours of live sessions, 6 hours of building/assignments, and 3 hours of review. This is not a passive course."
     },
     {
         id: "item-3",
-        question: "Is this a coding bootcamp?",
-        answer: "No. We do not teach coding as a product. We teach engineering thinking using AI tools."
+        question: "Is this suitable for beginners?",
+        answer: "You need basic programming knowledge. If you have never written a line of code, this is too advanced. If you know the basics but can't build a full app yet, this is for you."
     }
 ];
 
 const faqItems2 = [
     {
         id: "item-4",
-        question: "Is Cohort 2.0 free?",
-        answer: "Yes. It is free and highly selective."
+        question: "How are students selected?",
+        answer: "We select for 'slope' — how fast you learn and how clearly you think. We look for evidence of past projects and the ability to explain your reasoning."
     },
     {
         id: "item-5",
-        question: "Who can apply?",
-        answer: "Primarily students from IPU colleges. Others may apply but selection is not guaranteed."
+        question: "What tools do we use?",
+        answer: "We use the modern AI-native stack: Cursor, Windsurf, v0 for frontend, and direct LLM APIs for logic. We build on standardized tech: React, Node.js, Docker, PostgreSQL."
     },
     {
         id: "item-6",
-        question: "How are students evaluated?",
-        answer: "Weekly reports measure activity, intelligence growth, and discipline — discipline carries the highest weight."
+        question: "Is Cohort 2.0 free?",
+        answer: "Yes. It is free and highly selective. Entry is earned through intent, not payment."
     }
 ];
 
@@ -50,7 +50,7 @@ export default function FAQ() {
                 <p className="text-sm text-zinc-500">FAQ</p>
             </div>
             <h2 className="max-w-3xl text-3xl leading-tight text-white md:text-4xl font-normal">
-                Questions, <span className="text-zinc-500">answered with honesty.</span>
+                No ambiguity.
             </h2>
             <div className="mt-16 grid gap-x-12 md:grid-cols-2 items-start">
                 <Accordion type="multiple" className="w-full">

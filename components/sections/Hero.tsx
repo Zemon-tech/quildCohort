@@ -14,16 +14,24 @@ export default function Hero() {
             >
                 <source src="/hero.mp4" type="video/mp4" />
             </video>
-            <div className="text-center">
-                <h1 className="mx-auto max-w-4xl text-4xl font-normal leading-[1.1] text-zinc-100 md:text-5xl lg:text-6xl">
-                    Where thoughts
-                    <br />
-                    become actions.
+            <div className="text-center flex flex-col items-center z-10">
+                <h1 className="mx-auto max-w-5xl text-4xl font-normal leading-[1.1] text-zinc-100 md:text-5xl lg:text-6xl tracking-tight">
+                    Engineering. Discipline. Intelligence.
                 </h1>
-                <div className="mt-10">
+                <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400 font-light leading-relaxed">
+                    A selective, 4-week engineering cohort for builders who refuse to be average. <br className="hidden md:block" />
+                    Move beyond syntax. Build production-grade systems. Collaborate with AI.
+                </p>
+                <div className="mt-8 flex flex-col items-center gap-4">
+                    <p className="text-[13px] font-medium text-zinc-300 uppercase tracking-widest">
+                        15 hours/week • Strict Standards • No Shortcuts
+                    </p>
                     <Link className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="/apply">
-                        Begin Journey
+                        Apply to Cohort 2.0
                     </Link>
+                    <p className="text-xs text-zinc-100 font-mono">
+                        Selection Rate: &lt;10%
+                    </p>
                 </div>
             </div>
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-widest text-zinc-500 font-medium flex flex-col items-center gap-3">
