@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { motion } from "motion/react";
 
 /* ─── Floating label data ─── */
@@ -190,6 +191,32 @@ export default function Logistics() {
                             </span>
                         </motion.div>
                     ))}
+                </div>
+
+                {/* ── Apply Button ── */}
+                <div className="mt-20 flex flex-col items-center gap-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, delay: 0.3 }}
+                    >
+                        <Link
+                            className="rounded-full border border-zinc-700 bg-zinc-900/80 px-10 py-3.5 text-sm font-medium text-zinc-300 shadow-lg hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300"
+                            href="/apply"
+                        >
+                            Registrations Closed
+                        </Link>
+                    </motion.div>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, delay: 0.5 }}
+                        className="text-xs text-zinc-500 font-mono"
+                    >
+                        Selection Rate: &lt;10%
+                    </motion.p>
                 </div>
             </div>
         </section>

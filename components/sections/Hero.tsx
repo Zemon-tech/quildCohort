@@ -30,8 +30,8 @@ export default function Hero() {
                         <span className="hidden md:block text-zinc-700">•</span>
                         <span className="opacity-90">No Shortcuts</span>
                     </div>
-                    <Link className="rounded-full bg-white px-10 py-3.5 text-sm font-medium text-black shadow-lg hover:bg-zinc-200 transition-all duration-300" href="/apply">
-                        Apply to Cohort 2.0
+                    <Link className="rounded-full border border-zinc-700 bg-zinc-900/80 px-10 py-3.5 text-sm font-medium text-zinc-300 shadow-lg hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300" href="/apply">
+                        Registrations Closed
                     </Link>
                     <p className="text-xs text-zinc-100 font-mono">
                         Selection Rate: &lt;10%

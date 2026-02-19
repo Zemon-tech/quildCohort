@@ -64,8 +64,8 @@ export default function Navbar() {
           <a className="hover:text-white transition-colors" href="#faq" onClick={(e) => handleNavClick(e, "faq")}>FAQ</a>
         </nav>
 
-        <Link href="/apply" className="hidden font-medium text-zinc-200 hover:text-white transition-colors md:block">
-          Get Started
+        <Link href="/apply" className="hidden font-medium text-zinc-500 hover:text-zinc-300 transition-colors md:block">
+          Registrations Closed
         </Link>
 
         {/* Mobile Toggle */}
@@ -118,9 +118,9 @@ export default function Navbar() {
                 <Link
                   href="/apply"
                   onClick={() => setIsOpen(false)}
-                  className="inline-block rounded-full bg-white px-8 py-4 text-lg font-semibold text-black"
+                  className="inline-block rounded-full border border-zinc-700 bg-zinc-900/80 px-8 py-4 text-lg font-semibold text-zinc-300"
                 >
-                  Get Started
+                  Registrations Closed
                 </Link>
               </motion.div>
             </div>
